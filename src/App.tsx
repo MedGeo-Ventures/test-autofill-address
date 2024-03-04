@@ -14,6 +14,7 @@ function App() {
       >
         <>
           <input name='address1' placeholder='Address Line 1' />
+          <input name='city' placeholder='City' autoComplete='address-level2' />
           <input
             name='postcode'
             placeholder='Postcode'
@@ -22,7 +23,6 @@ function App() {
           />
         </>
       </AddressAutofill>
-      <input name='city' placeholder='City' autoComplete='address-level2' />
     </form>
   );
 }
