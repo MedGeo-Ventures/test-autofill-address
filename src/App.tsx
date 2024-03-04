@@ -12,16 +12,14 @@ function App() {
           country: 'US',
         }}
       >
-        <>
-          <input name='address1' placeholder='Address Line 1' />
-          <input
-            name='postcode'
-            placeholder='Postcode'
-            type='text'
-            autoComplete='postal-code'
-          />
-        </>
+        <input name='address1' placeholder='Address Line 1' />
       </AddressAutofill>
+      <input
+        name='postcode'
+        placeholder='Postcode'
+        type='text'
+        autoComplete='postal-code'
+      />
       <input name='city' placeholder='City' autoComplete='address-level2' />
     </form>
   );
