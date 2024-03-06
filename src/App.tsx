@@ -7,22 +7,44 @@ function App() {
       {/* @ts-ignore next-line */}
       <AddressAutofill
         accessToken={import.meta.env.VITE_MAPBOX_TOKEN as string}
-        options={{
-          language: 'en',
-          country: 'US',
-        }}
       >
-        <>
-          <input name='address1' placeholder='Address Line 1' />
-          <input
-            name='postcode'
-            placeholder='Postcode'
-            type='text'
-            autoComplete='postal-code'
-          />
-        </>
+        <input
+          name='address'
+          placeholder='Address'
+          type='text'
+          autoComplete='address-line1'
+        />
       </AddressAutofill>
-      <input name='city' placeholder='City' autoComplete='address-level2' />
+      <input
+        name='apartment'
+        placeholder='Apartment number'
+        type='text'
+        autoComplete='address-line2'
+      />
+      <input
+        name='city'
+        placeholder='City'
+        type='text'
+        autoComplete='address-level2'
+      />
+      <input
+        name='state'
+        placeholder='State'
+        type='text'
+        autoComplete='address-level1'
+      />
+      <input
+        name='country'
+        placeholder='Country'
+        type='text'
+        autoComplete='country'
+      />
+      <input
+        name='postcode'
+        placeholder='Postcode'
+        type='text'
+        autoComplete='postal-code'
+      />
     </form>
   );
 }
